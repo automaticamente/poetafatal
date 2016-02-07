@@ -24,6 +24,7 @@
   "dependencies": {
     "gl-syllabler": "^1.1.2",
     "lodash": "^4.1.0",
+    "redis": "^2.4.2",
     "rima": "^1.0.1",
     "twit": "^2.2.1"
   }
