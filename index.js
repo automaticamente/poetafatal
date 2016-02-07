@@ -26,6 +26,24 @@ const lex = require('./lex/words');
 const generator = new Poematic(lex);
 const tweeter = new Tweeter(config.twitterAPI);
 
+const badWords = [
+    'puta',
+    'puto',
+    'cabrón',
+    'racista',
+    'maltratador',
+    'maltratadora',
+    'xenófobo',
+    'xenófoba',
+    'nazi',
+    'homófobo',
+    'maricón',
+    'maricallo',
+    'marimacho',
+    'maricona',
+    'maricalla'
+];
+
 const capitalizeFirstLetter = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
 };
@@ -42,7 +60,7 @@ const buildPublic = () => {
 
     const tweet = result && result.join('\n').replace(/,$/, '.');
 
-    if (!result || tweet.length > 140) {
+    if (!result || tweet.length > 140 || new RegExp(badWords.join('|')).test(tweet)) {
         return buildPublic();
     }
 
@@ -62,7 +80,7 @@ const buildReply = (user) => {
 
     const tweet = result && result.join('\n').replace(/,$/, '.');
 
-    if (!result || tweet.length > 140) {
+    if (!result || tweet.length > 140 || new RegExp(badWords.join('|')).test(tweet)) {
         return buildReply(user);
     }
 
