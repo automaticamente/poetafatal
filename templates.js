@@ -53,7 +53,7 @@ greetings.set('C', [
 ]);
 
 greetings.set('D', [
-    '@, e os <NCFS,3> <VMG0000,3>',
+    '@, e as <NCFS,3> <VMG0000,3>',
     'Ou! @, coma <NCFS,2> vas <VMG0000,3>'
 ]);
 
