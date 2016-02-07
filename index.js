@@ -78,8 +78,8 @@ if (!command) {
 
 if (command === 'public') {
     tweeter.tweet(buildPublic())
-        .then(id => process.stdout.write(`Link to tweet: https://twitter.com/poetafatal/status/${id}\n`))
-        .catch((e) => process.stdout.write(`Error: ${e}`));
+        .then(id => process.stdout.write(`New Public Tweet: https://twitter.com/poetafatal/status/${id}\n`))
+        .catch((e) => process.stdout.write(`Error sending public tweet: ${e}`));
 }
 
 if (command === 'reply') {
@@ -89,11 +89,9 @@ if (command === 'reply') {
         }
 
         if (reply) {
-            process.stdout.write(`Tweeting to ${reply}\n`);
-
             tweeter.tweet(buildReply(reply))
-                .then(id => process.stdout.write(`Link to tweet: https://twitter.com/poetafatal/status/${id}\n`))
-                .catch((e) => process.stdout.write(`Error: ${e}`));
+                .then(id => process.stdout.write(`New reply: https://twitter.com/poetafatal/status/${id}\n`))
+                .catch((e) => process.stdout.write(`Error sending reply: ${e}`));
 
         }
     });
