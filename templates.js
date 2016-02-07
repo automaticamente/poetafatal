@@ -48,7 +48,7 @@ greetings.set('B', [
 ]);
 
 greetings.set('C', [
-    '@, es alma <AQ0FS,1> <VMIP3S,3>',
+    '@, alma <AQ0FS,2> que <VMIP3S,2>',
     'Ou! @, <NCCS,4> que <VMIP3S,3>'
 ]);
 
