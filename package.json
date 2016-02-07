@@ -1,0 +1,30 @@
+{
+  "name": "poetafatal",
+  "version": "1.0.0",
+  "description": "The worst twitter poet ever",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bertez/poetafatal.git"
+  },
+  "keywords": [
+    "twitter",
+    "bot",
+    "poetry"
+  ],
+  "author": "Berto Yáñez <berto@ber.to>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bertez/poetafatal/issues"
+  },
+  "homepage": "https://github.com/bertez/poetafatal#readme",
+  "dependencies": {
+    "gl-syllabler": "^1.1.2",
+    "lodash": "^4.1.0",
+    "rima": "^1.0.1",
+    "twit": "^2.2.1"
+  }
+}
