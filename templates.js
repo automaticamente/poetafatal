@@ -38,22 +38,22 @@ corpus.set('D', [
 const greetings = new Map();
 
 greetings.set('A', [
-    'Ai! @, persoa <AQ0FS,2> e <AQ0FS,2>',
+    '@, Ai! persoa <AQ0FS,2> e <AQ0FS,2>',
     'Es <AQ0CS,2>, @!, <AQ0CS,2> e <AQ0FS,2>'
 ]);
 
 greetings.set('B', [
-    'Ou! @, <VMIP2,3> <AQ0MS,3>',
+    '@, Ou! <VMIP2,3> <AQ0MS,3>',
     'Ai! @, <AQ0CS,3> destes <NCMP,3>'
 ]);
 
 greetings.set('C', [
-    'Es @, alma <AQ0FS,1> <VMIP3S,3>',
+    '@, es alma <AQ0FS,1> <VMIP3S,3>',
     'Ou! @, <NCCS,4> que <VMIP3S,3>'
 ]);
 
 greetings.set('D', [
-    'Ti @, <NCFS,4> <VMG0000,3>',
+    '@, e os <NCFS,3> <VMG0000,3>',
     'Ou! @, coma <NCFS,2> vas <VMG0000,3>'
 ]);
 
